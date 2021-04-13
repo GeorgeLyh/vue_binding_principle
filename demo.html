@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="./vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" v-model="info.name"/>
+			<h4>{{inputValue}}</h4>
+			<h4>{{info.name}}</h4>
+		</div>
+		
+		<script type="text/javascript">
+			const vm = new Vue({
+				el: "#app",
+				data(){
+					return{
+						inputValue: "hello",
+						info: {
+							name: "张三"
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
